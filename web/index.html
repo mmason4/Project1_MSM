@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Search</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Scripts/jquery.js"></script> 
+        <script src="Scripts/registration.js"></script> 
+        <link rel="stylesheet" type="text/css" href="Styles/style.css">
+    </head>
+    <body>
+        <a href="index.html">Search Registrations</a>&nbsp;
+        <a href="registration.html">Register Attendee</a>
+        <div id="options">
+            </br>
+            Select Session
+            <select>
+                <option>Session 1</option>
+                <option>Session 2</option>
+                <option>Session 3</option>
+                <option>Session 4</option>
+            </select>
+            <input type="button" onclick="registration.getAttendees();" value="Submit">
+        </div>
+        </br>
+        </br>
+        <div id="output">
+            
+        </div>
+    </body>
+</html>

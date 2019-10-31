@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register for a Course</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Scripts/jquery.js"></script> 
+        <script src="Scripts/registration.js"></script>
+        <link rel="stylesheet" type="text/css" href="Styles/style.css">
+    </head>
+    <body>
+        <a href="index.html">Search Registrations</a>&nbsp;
+        <a href="registration.html">Register Attendee</a>
+        <div id="options">
+            </br>
+            <p class="display-inline">First Name: </p><input type="text" onchange="registration.generateFullName()" id="firstName"/>
+            </br>
+            <p class="display-inline">Last Name: </p><input type="text" onchange="registration.generateFullName()" id="lastName"/>
+            </br>
+            <p class="display-inline">How your name will be displayed:</p><input type="text" id="displayName"/>
+            </br>
+            Select Session
+            <select>
+                <option>Session 1</option>
+                <option>Session 2</option>
+                <option>Session 3</option>
+                <option>Session 4</option>
+            </select>
+            </br>
+            <input type="button" value="Submit" onclick="registration.postAttendee();"/>
+        </div>
+        </br>
+        </br>
+        <div id="output">
+            
+        </div>
+    </body>
+</html>

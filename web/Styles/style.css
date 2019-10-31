@@ -1,0 +1,15 @@
+#options{
+    outline: 1px solid lightgray;
+}
+
+th{
+    outline: 1px solid black;
+}
+
+tr,td{
+    outline: 1px solid black;
+}
+
+.display-inline{
+    display: inline;
+}
